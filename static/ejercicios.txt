@@ -1,0 +1,280 @@
+
+musculos = Piernas
+tipo_respiracion = Respiración profunda
+nivel = Principiante
+repeticiones = 10
+tipo = Qigong de las Cinco Áreas
+descripcion = Fortalece las piernas y mejora el equilibrio
+
+musculos = Abdominales
+tipo_respiracion = Respiración abdominal
+nivel = Intermedio
+repeticiones = 15
+tipo = Qigong de los Seis Sonidos
+descripcion = Ayuda a la digestión y fortalece los órganos internos
+
+musculos = Cuello, hombros y espalda
+tipo_respiracion = Respiración torácica
+nivel = Avanzado
+repeticiones = 20
+tipo = Qigong de la Grulla
+descripcion = Alivia la tensión en la parte superior del cuerpo y mejora la postura
+
+musculos = Piernas y cadera
+tipo_respiracion = Respiración profunda
+nivel = Principiante
+repeticiones = 10
+tipo = Qigong de la Tortuga
+descripcion = Fortalece las piernas y mejora la flexibilidad de las caderas
+
+musculos = Brazos y pecho
+tipo_respiracion = Respiración torácica
+nivel = Intermedio
+repeticiones = 15
+tipo = Qigong de los Ocho Brocados
+descripcion = Fortalece los brazos y mejora la respiración
+
+musculos = Cintura y columna
+tipo_respiracion = Respiración abdominal
+nivel = Avanzado
+repeticiones = 20
+tipo = Qigong del Dragón
+descripcion = Fortalece la cintura y la columna vertebral
+
+musculos = Piernas
+tipo_respiracion = Respiración profunda
+nivel = Principiante
+repeticiones = 10
+tipo = Qigong de las Seis Curvas
+descripcion = Fortalece las piernas y mejora la circulación de la sangre
+
+musculos = Abdominales y pecho
+tipo_respiracion = Respiración torácica
+nivel = Intermedio
+repeticiones = 15
+tipo = Qigong de las Tres Cabezas
+descripcion = Fortalece los abdominales y mejora la respiración
+
+musculos = Espalda
+tipo_respiracion = Respiración abdominal
+nivel = Avanzado
+repeticiones = 20
+tipo = Qigong de la Serpiente
+descripcion = Alivia la tensión en la parte superior de la espalda y mejora la flexibilidad de la columna vertebral
+
+musculos = Piernas y cadera
+tipo_respiracion = Respiración profunda
+nivel = Principiante
+repeticiones = 10
+tipo = Qigong del Mono
+descripcion = Fortalece las piernas y mejora la flexibilidad de las caderas
+
+musculos = Cuerpo entero
+tipo_respiracion = Respiración profunda
+nivel = Principiante
+repeticiones = 10
+tipo = Qigong de la Familia Wu
+descripcion = Mejora la circulación y fortalece el cuerpo
+
+musculos = Cuello y hombros
+tipo_respiracion = Respiración abdominal
+nivel = Intermedio
+repeticiones = 15
+tipo = Qigong de las Siete Palmas
+descripcion = Alivia la tensión en el cuello y los hombros
+
+musculos = Piernas y cadera
+tipo_respiracion = Respiración profunda
+nivel = Avanzado
+repeticiones = 20
+tipo = Qigong de la Serpiente y la Garza
+descripcion = Fortalece las piernas y mejora la flexibilidad de las caderas
+
+musculos = Cintura y abdomen
+tipo_respiracion = Respiración torácica
+nivel = Principiante
+repeticiones = 10
+tipo = Qigong del Caballo Salvaje
+descripcion = Fortalece la cintura y el abdomen
+
+musculos = Cuello y espalda
+tipo_respiracion = Respiración abdominal
+nivel = Intermedio
+repeticiones = 15
+tipo = Qigong de los Ocho Movimientos
+descripcion = Alivia la tensión en el cuello y la espalda
+
+musculos = Brazos y pecho
+tipo_respiracion = Respiración profunda
+nivel = Avanzado
+repeticiones = 20
+tipo = Qigong de los Cinco Animales
+descripcion = Fortalece los brazos y el pecho
+
+musculos = Cintura y columna
+tipo_respiracion = Respiración torácica
+nivel = Principiante
+repeticiones = 10
+tipo = Qigong de la Tortuga Negra
+descripcion = Fortalece la cintura y la columna vertebral
+
+musculos = Piernas y glúteos
+tipo_respiracion = Respiración profunda
+nivel = Intermedio
+repeticiones = 15
+tipo = Qigong del Pato
+descripcion = Fortalece las piernas y los glúteos
+
+musculos = Cabeza y cuello
+tipo_respiracion = Respiración abdominal
+nivel = Avanzado
+repeticiones = 20
+tipo = Qigong de la Serpiente y el Tigre
+descripcion = Alivia la tensión en la cabeza y el cuello
+
+musculos = Brazos y hombros
+tipo_respiracion = Respiración torácica
+nivel = Principiante
+repeticiones = 10
+tipo = Qigong de la Garza Blanca
+descripcion = Fortalece los brazos y los hombros
+
+musculos = Abdominales
+tipo_respiracion = Inhalación
+nivel = Principiante
+repeticiones = 10
+tipo = Roll Up
+descripcion = Fortalece los abdominales y la columna vertebral
+
+musculos = Piernas
+tipo_respiracion = Exhalación
+nivel = Intermedio
+repeticiones = 15
+tipo = Single Leg Circle
+descripcion = Mejora la flexibilidad de las caderas y fortalece las piernas
+
+musculos = Brazos
+tipo_respiracion = Inhalación
+nivel = Avanzado
+repeticiones = 20
+tipo = Push Up
+descripcion = Fortalece los brazos, el pecho y los abdominales
+
+musculos = Espalda
+tipo_respiracion = Exhalación
+nivel = Principiante
+repeticiones = 10
+tipo = Swan Dive
+descripcion = Fortalece la espalda y mejora la postura
+
+musculos = Piernas y glúteos
+tipo_respiracion = Inhalación
+nivel = Intermedio
+repeticiones = 15
+tipo = Side Kick Series
+descripcion = Fortalece las piernas y los glúteos
+
+musculos = Brazos y hombros
+tipo_respiracion = Exhalación
+nivel = Avanzado
+repeticiones = 20
+tipo = Teaser
+descripcion = Fortalece los brazos, los hombros y los abdominales
+
+musculos = Abdominales
+tipo_respiracion = Inhalación
+nivel = Principiante
+repeticiones = 10
+tipo = Hundred
+descripcion = Mejora la respiración y fortalece los abdominales
+
+musculos = Piernas
+tipo_respiracion = Exhalación
+nivel = Intermedio
+repeticiones = 15
+tipo = Rolling Like a Ball
+descripcion = Fortalece los abdominales y la columna vertebral
+
+musculos = Brazos
+tipo_respiracion = Inhalación
+nivel = Avanzado
+repeticiones = 20
+tipo = Saw
+descripcion = Mejora la flexibilidad de la columna vertebral y fortalece los brazos y las piernas
+
+musculos = Espalda
+tipo_respiracion = Exhalación
+nivel = Principiante
+repeticiones = 10
+tipo = Spine Stretch
+descripcion = Mejora la postura y fortalece la espalda
+
+musculos = Piernas y glúteos
+tipo_respiracion = Inhalación
+nivel = Intermedio
+repeticiones = 15
+tipo = Leg Pull Front
+descripcion = Fortalece los glúteos y las piernas
+
+musculos = Brazos y hombros
+tipo_respiracion = Exhalación
+nivel = Avanzado
+repeticiones = 20
+tipo = Swan
+descripcion = Fortalece los brazos, los hombros y la espalda
+
+musculos = Abdominales
+tipo_respiracion = Inhalación
+nivel = Principiante
+repeticiones = 10
+tipo = Double Leg Stretch
+descripcion = Fortalece los abdominales y la columna vertebral
+
+musculos = Piernas
+tipo_respiracion = Exhalación
+nivel = Intermedio
+repeticiones = 15
+tipo = Criss Cross
+descripcion = Fortalece los abdominales y mejora la flexibilidad de la columna vertebral
+
+musculos = Brazos
+tipo_respiracion = Inhalación
+nivel = Avanzado
+repeticiones = 20
+tipo = Control Balance
+descripcion = Fortalece los brazos, los hombros y el abdomen
+
+musculos = Abdominales
+tipo_respiracion = Exhalación al esfuerzo
+nivel = Intermedio
+repeticiones = 10
+tipo = Mat
+descripcion = Llevar el cuello hacia adelante sin tensión
+
+musculos = Espalda
+tipo_respiracion = Inhalación en la preparación, exhalación en el movimiento
+nivel = Principiante
+repeticiones = 8
+tipo = Reformer
+descripcion = Trabajar los extensores de la columna en posición prona
+
+musculos = Piernas
+tipo_respiracion = Inhalación en la preparación, exhalación en el movimiento
+nivel = Intermedio
+repeticiones = 12
+tipo = Silla
+descripcion = Fortalecer los cuádriceps en posición sentada
+
+musculos = Glúteos
+tipo_respiracion = Inhalación en la preparación, exhalación en el movimiento
+nivel = Avanzado
+repeticiones = 15
+tipo = Wall
+descripcion = Tonificar los glúteos en posición de pared
+
+musculos = Abdominales
+tipo_respiracion = Exhalación al esfuerzo
+nivel = Principiante
+repeticiones = 8
+tipo = Mat
+descripcion = Fortalecer la musculatura abdominal en posición supina

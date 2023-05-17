@@ -1,0 +1,227 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff7373;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e64c4c;
+}
+
+/* Estilos para el navegador */
+
+.navega {
+  background-color: #fff; /* color de fondo */
+  border-bottom: 2px solid #ccc; /* línea inferior */
+  position: fixed; /* fijar el navegador en la parte superior de la página */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.cajon_nav {
+  max-width: 1200px; /* ancho máximo del contenido del navegador */
+  margin: 0 auto; /* centrar el contenido del navegador */
+  display: flex; /* utilizar un diseño de caja flexible */
+  justify-content: space-between; /* alinear los elementos a los extremos */
+  align-items: center; /* centrar verticalmente los elementos */
+  padding: 1rem; /* espacio interno */
+}
+
+.menu {
+  list-style: none; /* quitar los puntos de lista */
+  display: flex; /* utilizar un diseño de caja flexible */
+  margin: 0; /* quitar el margen */
+  padding: 0; /* quitar el espacio interno */
+}
+
+.menu li {
+  margin: 0 1rem; /* espacio entre los elementos */
+}
+
+.menu a {
+  color: #333; /* color del texto */
+  text-decoration: none; /* quitar el subrayado */
+  font-weight: bold; /* negrita */
+  font-size: 1.2rem; /* tamaño de fuente */
+  transition: all 0.2s ease-in-out; /* animación al pasar el cursor */
+}
+
+.menu a:hover {
+  color: #e67e22; /* color del texto al pasar el cursor */
+}
+
+
+/* Estilos del perfil */
+.perfil_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+    margin-top: 48px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul li {
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  color: #2f2f2f;
+  line-height: 1.5;
+}
+
+ul li:before {
+  content: "\f183";
+  font-family: FontAwesome;
+  font-size: 1.3rem;
+  color: #9B9B9B;
+  margin-right: 10px;
+}
+/* Estilos para la imagen de perfil */
+
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Estilos para el título del perfil */
+
+.perfil_title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 4rem;
+  color: #3366cc;
+}
+
+/* Estilos para el encabezado */
+
+header {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+container {
+  max-width: 700px; /* Ajustar el ancho máximo según sea necesario */
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #2f2f2f;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #6c6c6c;
+  line-height: 1.5;
+}
+/*datos*/
+.datos {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.datos li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.datos li span {
+  font-weight: normal;
+}
+
+.datos li:last-child {
+  margin-bottom: 0;
+}
+
+.datos li:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.datos li:nth-child(odd) {
+  background-color: #eee;
+}
+
+.boton{
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+     border-radius: 10px;
+}
+.especial {
+    color: blue;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.orange{
+    color: orange;
+}
+/*Boton para volver*/
+.back-button {
+  background-color: #f1f1f1;
+  border: none;
+  color: #555;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}
+.oculto {
+  display: none;
+}

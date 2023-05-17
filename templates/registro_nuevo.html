@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+      <link rel = 'stylesheet' href="{{url_for('static', filename='editar.css')}}">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro datos de alumno - Qigong</title>
+  </head>
+<body>
+	<h1>Registro datos de alumno Nuevo</h1>
+    <h3>Edite sus nuevos datos y presione Registrar</h3>
+
+    <form action="{{ url_for('registro_nuevo')}}" method="post" enctype="multipart/form-data">
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" value=""><br>
+
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos" value=""><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" value=""><br>
+
+        <label>Curso:</label>
+        <input type="text" name="curso" value=""><br>
+
+        <label>Edad:</label>
+        <input type="number" name="edad" value=""><br>
+
+        <label>IMG Perfil:</label>
+        <input type="file" name="img_perfil"><br>
+
+        <label>Nombre del perfil:</label>
+        <input type="text" name="perfil" value="{{ request.files['img_perfil'].filename if 'img_perfil' in request.files else '' }}"><br>
+
+
+
+        <label>Password:</label>
+        <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="La contraseña debe tener al menos 8 caracteres y contener al menos una letra y un número." required><br>
+
+        <!--<input type="password" name="password" value="usuario"><br>-->
+
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

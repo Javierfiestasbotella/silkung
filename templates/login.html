@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel = 'stylesheet' href="{{url_for('static', filename='main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <form action="{{ url_for('login') }}" method="post">
+
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Username" id="username" value="">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password" id="password" value="">
+            <br>
+            <button type="submit">Login</button>
+        </form>
+
+        <button onclick="window.history.back();" class="back-button">Volver</button>
+
+
+    </div>
+    <h1 class="tlt2">Pilates y Chikung</h1>
+</body>
+</html>
+
+
+
+

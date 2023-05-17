@@ -1,0 +1,404 @@
+body, ul{
+background: linear-gradient(to right, #2c3e50, #bdc3c7);
+font-family: 'Ubuntu', sans-serif;
+
+}
+
+.usuario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5em;
+}
+.tlt {
+  text-align: center;
+}
+
+
+
+
+
+.usuario img {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    margin-right: 1.5em;
+}
+
+.usuario-text h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.usuario-text p {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.usuario-text a {
+    font-size: 1.5em;
+}
+/*Estilo para pantallas más pequeñas*/
+@media only screen and (max-width: 600px) {
+    .usuario {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .usuario img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .usuario-text h1 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .usuario-text p {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .usuario-text a {
+        font-size: 1em;
+    }
+}
+/* Estilos para el contenedor de la lista de alumnos */
+.lista-alumnos {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la tarjeta de cada alumno */
+.usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.usuario-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Agregado */
+}
+
+.usuario:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.usuario img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 50px;
+}
+.actualizar {
+
+  margin: 8px;
+  padding: 8px;
+  border: 2px solid #4CAF50;
+  background-color: blue;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actualizar:hover {
+  background-color: #fff;
+  color: #4CAF50;
+}
+.usuario-text h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.usuario-text p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.usuario-text a {
+  font-size: 18px;
+  color: #428bca;
+  transition: color 0.3s ease-in-out;
+}
+
+.usuario-text a:hover {
+  color: #2a6496;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .usuario {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .usuario img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .usuario-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .usuario-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .usuario-text a {
+    font-size: 16px;
+  }
+}
+
+
+
+ .nota {
+            width: 300px;
+            height: 100px;
+            resize: none;
+            float: right; /* Posiciona el textarea a la derecha */
+            margin-left: 20px; /* Agrega un margen para separarlo de los datos del alumno */
+            margin-top: -90px; /* Mueve el textarea hacia arriba */
+        }
+ /* Ajusta el tamaño del textarea en pantallas pequeñas */
+ @media screen and (max-width: 480px) {
+    .nota {
+        width: 100%;
+        height: 150px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+        /* Ajusta la posición del textarea en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .nota {
+        float: none;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+/*barra menu */
+header nav{
+	float:right;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li{
+	list-style: none;
+	position: relative;
+}
+
+header nav ul li.sub-menu:before{
+	content: '\f0d7';
+	font-family: fontAwesome;
+	position: absolute;
+	line-height: 50px;
+	color:#fff;
+	right:8px;
+
+}
+
+header nav ul li.active.sub-menu:before {
+	content: '\f0d8';
+}
+
+header nav ul li ul {
+	position: absolute;
+	left:0;
+	background: rgba(148, 129, 168, 0.8);/*color del fondo del desplegable*/
+	display: none;
+}
+
+header nav ul li.active ul{
+	display: block;
+}
+
+header nav ul li ul li{
+	display: block;
+	width: 200px;
+}
+
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	height:50px;
+	line-height: 50px;
+	padding: 0 25px;
+	display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+	background:#2196f3;
+}
+
+.menu-toggle{
+	color:white;
+	float:right;
+	line-height: 50px;
+	font-size:24px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 991px){
+
+	header{
+		padding:0 30px;
+
+
+	}
+
+	.menu-toggle{
+		display: block;
+	}
+
+	header nav{
+		position: absolute;
+		width:100vw;
+		height: calc(100vh - 50px);
+		background-color: #333;
+		top:50px;
+		left:-100%;
+		transition: 0.5s;
+	}
+
+	header nav.active{
+		left:0px;
+	}
+
+	header nav ul{
+		display: block;
+		text-align: center;
+	}
+
+	header nav ul li a{
+		border-bottom: 1px solid rgba(0,0,0,.7);
+	}
+
+	header nav ul li.active ul{
+	    position: relative;
+	    background-color: #003e6f;
+    }
+
+    header nav ul li ul li{
+    	width:100vw;
+    	text-align: center;
+    }
+
+}
+Copy code
+.sub-menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+}
+
+.sub-menu:hover ul {
+    display: block;
+}
+
+.ejercicio-text {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+ejercicio {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.ejercicio h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.ejercicio p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.ejercicio a {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #2d9cdb;
+}
+/*Boton para volver*/
+.back-button {
+  background-color: #f1f1f1;
+  border: none;
+  color: #555;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.9;
+    z-index: 1;
+    transform: scaleY(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+

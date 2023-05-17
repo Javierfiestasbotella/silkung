@@ -1,0 +1,64 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Estilos para el título de la página */
+h1 {
+  border: 3px solid #66CD00;
+  background-color: #F0FFF0;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: "Brush Script MT", cursive;
+  font-size: 3em;
+  color: #228B22;
+}
+
+/* Estilos para la galería de videos */
+.video-gallery {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Estilos para los videos */
+.video {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video h2 {
+  margin: 0;
+  padding: 10px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.5em;
+  color: #228B22;
+  background-color: #F0FFF0;
+  border-bottom: 3px solid #66CD00;
+  text-align: center;
+}
+/*Boton para volver*/
+.back-button {
+  background-color: #f1f1f1;
+  border: none;
+  color: #555;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}

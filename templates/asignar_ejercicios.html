@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asignar ejercicios a usuario</title>
+</head>
+<body>
+    <h1>Asignar ejercicios a {{ user.nombre }}</h1>
+
+    <h1>Editar Alumno</h1>
+    <form method="post">
+        <label for="fecha_inicio">Fecha de inicio:</label>
+        <input type="date" name="fecha_inicio" id="fecha_inicio" >
+
+        <label for="facturas">Facturas:</label>
+        <textarea name="facturas" id="facturas" ></textarea>
+
+        <label for="lista_ejercicios">Lista de ejercicios:</label>
+        <textarea name="lista_ejercicios" id="lista_ejercicios" "></textarea>
+
+        <label for="cursos">Cursos:</label>
+        <textarea name="cursos" id="cursos" ></textarea>
+
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>

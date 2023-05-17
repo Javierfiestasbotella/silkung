@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galería de videos de Qigong</title>
+      <link rel = 'stylesheet' href="{{url_for('static', filename='videos_ejercicios.css')}}">
+  </head>
+  <body>
+    <h1>Galería de videos de Qigong</h1>
+    <button onclick="window.history.back();" class="back-button">Volver</button>
+
+    <div class="video-gallery">
+      <div class="row">
+        <div class="column">
+          <div class="video">
+            <h2>Video 1: Ejercicio de respiración abdominal</h2>
+            <video width="320" height="240" controls>
+              <source src="/static/videos/respiracion.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento <code>video</code>.
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <div class="video">
+            <h2>Video 2: Ejercicio de la grulla blanca</h2>
+            <video width="320" height="240" controls>
+              <source src="/static/videos/ejercicio_grulla_blanca.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento <code>video</code>.
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <div class="video">
+            <h2>Video 3: Ejercicio de la postura del árbol</h2>
+            <video width="320" height="240" controls>
+              <source src="/static/videos/ejercicio_postura_arbol.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento <code>video</code>.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="video">
+            <h2>Video 4: Ejercicio de la tortuga marina</h2>
+            <video width="320" height="240" controls>
+              <source src="/static/videos/ejercicio_tortuga_marina.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento <code>video</code>.
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <div class="video">
+            <h2>Video 5: Ejercicio de la postura del caballo</h2>
+            <video width="320" height="240" controls>
+              <source src="/static/videos/ejercicio_postura_caballo.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento <code>video</code>.
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <div class="video">
+            <h2>Video 6: Ejercicio de la nube blanca</h2>
+            <video width="320" height="240" controls>
+              <source src="/static/videos/ejercicio_nube_blanca.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+
+        </video>
+      </div>
+    </div>
+  </body>
+</html>

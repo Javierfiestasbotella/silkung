@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>galeria imagenes chikung</title>
+    <link rel = 'stylesheet' href="{{url_for('static', filename='galery.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Markazi+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Galeria de imagenes Qigong</h1>
+<button onclick="window.location.href='/'" class="back-button">Volver</button>
+    <span class=linea></span>
+            <seccion class="galeria">
+                <a href="#image1"><img src="static/img_chi/01.jpg" alt=""></a>
+                <a href="#image2"><img src="static/img_chi/02.jpg" alt=""></a>
+                <a href="#image3"><img src="static/img_chi/03.jpg" alt=""></a>
+                <a href="#image4"><img src="static/img_chi/04.jpg" alt=""></a>
+                <a href="#image5"><img src="static/img_chi/05.jpg" alt=""></a>
+                <a href="#image6"><img src="static/img_chi/06.jpg" alt=""></a>
+            </seccion>
+            <article class="light-box"  id="image1">
+                <a href="#image6" class=" next"><i class="fa-solid fa-arrow-left"></i></a>
+                <img src="static/img_chi/01.jpg" alt="">
+                <a href="#image2" class=" next"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class=" close">X</a>
+            </article>
+
+            <article class="light-box"  id="image2">
+                <a href="#image1" class=" next"><i class="fa-solid fa-arrow-left"></i></a>
+                <img src="static/img_chi/02.jpg" alt="">
+                <a href="#image3" class=" next"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class=" close">X</a>
+            </article>
+
+            <article class="light-box"  id="image3">
+                <a href="#image2" class=" next"><i class="fa-solid fa-arrow-left"></i></a>
+                <img src="static/img_chi/03.jpg" alt="">
+                <a href="#image4" class=" next"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class=" close">X</a>
+            </article>
+
+            <article class="light-box"  id="image4">
+                <a href="#image3" class=" next"><i class="fa-solid fa-arrow-left"></i></a>
+                <img src="static/img_chi/04.jpg" alt="">
+                <a href="#image5" class=" next"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class=" close">X</a>
+            </article>
+
+            <article class="light-box"  id="image5">
+                <a href="#image4" class=" next"><i class="fa-solid fa-arrow-left"></i></a>
+                <img src="static/img_chi/05.jpg" alt="">
+                <a href="#image6" class=" next"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class=" close">X</a>
+            </article>
+
+            <article class="light-box"  id="image6">
+                <a href="#image5" class=" next"><i class="fa-solid fa-arrow-left"></i></a>
+                <img src="static/img_chi/06.jpg" alt="">
+                <a href="#image1" class=" next"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class=" close">X</a>
+            </article>
+<script src="https://kit.fontawesome.com/d311755c25.js" crossorigin="anonymous"></script>
+</body>
+</html>

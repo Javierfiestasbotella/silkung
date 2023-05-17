@@ -1,0 +1,61 @@
+/* Ajustar el ancho de la tabla para adaptarse a la pantalla */
+        table {
+            width: 100%;
+        }
+        /* Estilos para la fila de encabezado */
+        th {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+        /* Estilos para las filas de datos */
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        /* Estilos para el botón Eliminar */
+        button[type="submit"] {
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        /* Estilos para el formulario */
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        select {
+            margin-bottom: 10px;
+        }
+        /*Boton para volver*/
+.back-button {
+  background-color: #f1f1f1;
+  border: none;
+  color: #555;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}
+body{
+  background-image: url("../static/silvia01o.jpg");
+  background-size: cover;
+  opacity: 0.7;
+  z-index: -1; /* Para que la capa esté detrás del contenido del body */
+}

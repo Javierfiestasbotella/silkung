@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+      <link rel = 'stylesheet' href="{{url_for('static', filename='editar.css')}}">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro ejercicios de alumno - Qigong y Pilates</title>
+  </head>
+<body>
+	<h1>Registro datos de alumno</h1>
+    <h3>Edite sus nuevos datos y presione Registrar</h3>
+
+    <form action="{{ url_for('editar_ejercicios')}}" method="post" enctype="multipart/form-data">
+
+        <label>Id del usuario:</label>
+        <input type="text" name="user_id" value="" placeholder="Id del alumno"><br>
+
+       <label>Fecha de inicio:</label>
+    <input type="date" name="fecha_inicio" value="{{ today }}" placeholder="YYYY-MM-DD"><br>
+
+
+        <label>Última Factura:</label>
+        <input type="text" name="facturas" value="" placeholder="Pagada/Impagada"><br>
+
+        <label>Lista Ejercicios:</label>
+        <input type="text" name="lista_ejercicios" value="" placeholder="Ejercicios separados por ','"><br>
+
+        <label>Curso:</label>
+        <input type="text" name="cursos" value="" placeholder="Cusros en trámite"><br>
+
+
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

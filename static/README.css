@@ -1,0 +1,44 @@
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  color: #333;
+  background-color: #f1f1f1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4a4e69;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 767px) {
+  table {
+    width: 100%;
+  }
+}
+.contaimer{
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-color: rgba(242, 242, 242, 0.5);
+  padding: 50px;
+  opacity: 0.9;
+}
+
+
+body{
+    background:rgba(99, 98, 101, 0.37);
+}

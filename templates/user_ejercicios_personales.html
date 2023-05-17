@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicios de un usuario</title>
+	<link rel = 'stylesheet' href="{{url_for('static', filename='user_ejercicios_personales.css')}}">
+
+
+</head>
+<body>
+	        <button onclick="window.history.back();" class="back-button">Volver</button>
+
+<div class="caja_1">
+	 <ul class="datos">
+			<li>Nombre: {{ usuario.nombre }}</li>
+			<li>Apellidos: {{ usuario.apellidos }}</li>
+			<li>Email: {{ usuario.email }}</li>
+			<li>Curso: {{ usuario.curso }}</li>
+			<li>Edad: {{ usuario.edad }}</li>
+
+  		</ul>
+</div>
+<div class="caja_2">
+<h1>Tus Ejercicios</h1>
+				{% for ejercicios in listado: %}
+		<div class="especial">
+			<section>
+					<p class="orange">{{ ejercicios.tipo }} --> {{ ejercicios.tipo }}</p>
+					<p> Repeticiones --> {{ ejercicios.repeticiones }}</p>
+					<p>Respiración --> {{ ejercicios.tipo_respiracion }}</p>
+
+			</section>
+
+		</div>
+		{% endfor %}
+	</div>
+</body>
+</html>

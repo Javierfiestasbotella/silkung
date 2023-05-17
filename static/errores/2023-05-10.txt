@@ -1,0 +1,18 @@
+(sqlite3.OperationalError) database is locked
+[SQL: DELETE FROM usuarios WHERE usuarios.id_user = ?]
+[parameters: (17,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)---> Hora: 23:35
+(sqlite3.OperationalError) database is locked
+[SQL: DELETE FROM usuarios WHERE usuarios.id_user = ?]
+[parameters: (17,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)---> Hora: 23:44
+
+(sqlite3.OperationalError) database is locked
+[SQL: DELETE FROM usuarios WHERE usuarios.id_user = ?]
+[parameters: (18,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)---> Hora: 23:46
+
+(sqlite3.OperationalError) database is locked
+[SQL: DELETE FROM usuarios WHERE usuarios.id_user = ?]
+[parameters: (18,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)---> Hora: 23:48

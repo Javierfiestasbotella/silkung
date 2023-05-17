@@ -1,0 +1,183 @@
+ body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        font-family:Roboto;
+        background-image: url("../static/silvia01o.jpg");
+        background-size: cover;
+        opacity: 0.7;
+        z-index: -1; /* Para que la capa esté detrás del contenido del body */
+      }
+
+      header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .title {
+        background-color: blue;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin: 0;
+      }
+
+      main {
+        margin: 20px;
+      }
+
+      section {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      h2 {
+        color: #4d4d4d;
+        font-size: 24px;
+        margin-top: 0;
+      }
+
+      .price {
+        background-color: #99ccff;
+        font-size: 20px;
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .price strong {
+        color: #ff6600;
+        font-size: 28px;
+      }
+
+      .discount {
+        color: #4d4d4d;
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .group-price {
+        color: #4d4d4d;
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      .group-price strong {
+        color: #ff6600;
+      }
+
+      .price-embarazadas {
+        background-color: green;
+        border-radius: 10px;
+        margin: 20px 0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .price-embarazadas h2 {
+        color: #ffffff;
+        font-size: 24px;
+        margin-top: 0;
+      }
+
+      .price-embarazadas .price {
+        font-size: 20px;
+        margin: 20px 0;
+      }
+
+      .price-embarazadas .discount {
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .price-embarazadas .group-price {
+        color: #ffffff;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      .price-embarazadas .group-price strong {
+        color: #ffffff;
+      }
+
+      .price-niños {
+        background-color: #99ccff;
+        border-radius: 10px;
+        margin: 20px 0;
+        padding: 20px;
+        text-align: center;
+      }
+/* Estilos para precios de clases para niños */
+.price-niños {
+  background-color: #F7BFB4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #CDAE9F;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.price-niños h2 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px #CDAE9F;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.price-niños p {
+  color: #2B2D42;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.price-niños .price {
+  font-weight: bold;
+}
+
+.price-niños .discount {
+  font-style: italic;
+}
+
+.price-niños .group-price {
+  font-style: italic;
+}
+/*Boton para volver*/
+.back-button {
+  background-color: #f1f1f1;
+  border: none;
+  color: #555;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}

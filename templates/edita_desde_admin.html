@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+      <link rel = 'stylesheet' href="{{url_for('static', filename='editar.css')}}">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Editar datos de alumno - Qigong</title>
+  </head>
+<body>
+	<h1>Editar datos de alumno {{ user.nombre +' '+ user.apellidos}}</h1>
+    <h3>Edite sus nuevos datos y presione Actualizar</h3>
+
+    <form action="{{ url_for('edita_desde_admin', id=user.id_user) }}" method="post">
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" value="{{ user.nombre }}"><br>
+
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos" value="{{ user.apellidos }}"><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ user.email }}"><br>
+
+        <label>Curso:</label>
+        <input type="text" name="curso" value="{{ user.curso }}"><br>
+
+        <label>Edad:</label>
+        <input type="number" name="edad" value="{{ user.edad }}"><br>
+
+
+        <label>Password:</label>
+        <input type="password" name="password" value="{{ user.password }}"><br>
+
+        <input type="submit" value="Actualizar">
+    </form>
+</body>
+</html>

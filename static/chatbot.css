@@ -1,0 +1,97 @@
+body {
+  background-image: url("../static/silvia01o.jpg");
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -1; /* Para que la capa esté detrás del contenido del body */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
+
+
+
+#chatbot-container {
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #f5f5f5;
+  opacity: 0.7;
+}
+
+.mensaje {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.usuario {
+  background-color: #eee;
+  text-align: left;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.chatbot {
+  background-color: #007bff;
+  color: #fff;
+  text-align: right;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.limpiar {
+  clear: both;
+}
+input[type="text"] {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 70%;
+  font-family: "Arial", sans-serif;
+  color: white;
+  background-color: black;
+}
+button[type="submit"] {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e90ff;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #007bff;
+}
+.titulo {
+  color: white;
+  font-family: "Noto Serif TC", serif;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*Boton para volver*/
+.back-button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}

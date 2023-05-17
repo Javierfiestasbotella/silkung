@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alumnos</title>
+    <link rel = 'stylesheet' href="{{url_for('static', filename='alumnos.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+			<ul>
+				<li class="sub-menu"><a href="">Edición</a>
+                    <ul>
+						<li><a href="{{url_for('registro_nuevo')}}">Registrar Alumno</a></li>
+                        <li><a href="{{url_for('editar_ejercicios')}}">Editar ejercicios</a></li>
+						<li><a href="{{url_for('delete_user')}}">Dar de baja Alumno</a></li>
+					</ul>
+                </li>
+
+				<li><a href="{{url_for('formulario_contacto')}}">Envio</a></li>
+			</ul>
+		</nav>
+</header>
+    <h1 class="tlt">Lista Alumnos Matriculados</h1>
+        <button onclick="window.location.href='/'" class="back-button">Pagina Inicio</button>
+        <button class="back-button">Alumnos de Qigong <a href="{{url_for('alumnos_quigong')}}">Ir</a></button>
+        <button class="back-button">Alumnos de Pilates <a href="{{url_for('alumnos_pilates')}}">Ir</a></button>
+
+
+     {% for usuario in usuarios %}
+    <div class="usuario">
+
+        <a href="{{ url_for('edita_desde_admin', id=usuario.id_user) }}">
+  <img src="{{ url_for('static', filename=usuario.perfil) }}" alt="Imagen de perfil">
+            <p class="actualizar">Presione para actualizar datos</p>
+        </a>
+
+
+        <section class="usuario-text">
+          <h1>{{ usuario.nombre }} ----> Nº Alumno:{{ usuario.id_user }}</h1>
+          <p>{{ usuario.apellidos }}</p>
+          <p>Curso: {{ usuario.curso }}</p>
+          <a href="">{{ usuario.email }}</a>
+
+          <section class="ejercicio-text">
+            {% for dato in datos_usuario[usuario.id_user] %}
+              <div class="ejercicio">
+
+                <h1 style="display: inline-block;">Fecha Inicio:</h1>
+                  <p style="display: inline-block;">{{ dato.fecha_inicio }}</p>
+<p></p>
+                  <h1 style="display: inline-block;">Facturas:</h1>
+                <p style="display: inline-block;">{{ dato.facturas }}</p>
+
+        <a href="{{ url_for('user_ejercicios_personales', id=dato.user_id) }}"> {{ dato.lista_ejercicios }}</a>
+        <!--<a href="{{ url_for('user_ejercicios') }}"> {{ dato.lista_ejercicios }}</a>-->
+
+
+
+
+
+              </div>
+            {% endfor %}
+          </section>
+        </section>
+    </div>
+{% endfor %}
+
+
+</body>
+</html>

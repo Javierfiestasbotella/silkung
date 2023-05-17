@@ -1,0 +1,105 @@
+/* Estilos para la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilos para cada fila */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para la cabecera de la tabla */
+th {
+  background-color: #2e3192;
+  color: white;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  /* Ocultar la primera columna de la tabla */
+  td:first-child,
+  th:first-child {
+    display: none;
+  }
+
+  /* Alinear el texto de la tabla a la izquierda */
+  td,
+  th {
+    text-align: left;
+    padding: 5px;
+  }
+
+  /* Añadir bordes a la tabla */
+  td,
+  th {
+    border: 1px solid #ddd;
+  }
+}
+
+/* Estilos para las celdas de cada actividad */
+.pilates {
+  background-color: #e5f9f5;
+}
+
+.qigong {
+  background-color: #fce8cc;
+}
+
+.descanso {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para la hora */
+.hora {
+  font-weight: bold;
+}
+#meditacion {
+  background-color: #ffe4c4;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #ffa07a;
+  padding: 10px;
+}
+
+#salida-campo {
+  background-color: #d8bfd8;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #ba55d3;
+  padding: 10px;
+}
+
+
+/*Boton para volver*/
+.back-button {
+  background-color: #f1f1f1;
+  border: none;
+  color: #555;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}
+body{
+  background-image: url("../static/silvia01o.jpg");
+  background-size: cover;
+  opacity: 0.8;
+  z-index: -1; /* Para que la capa esté detrás del contenido del body */
+}

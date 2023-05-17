@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='alumno.css') }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Baja Alumno - Qigong</title>
+</head>
+<body>
+	<h1>
+		Dar de baja al Alumno{{ user.nombre }} {{ user.apellidos }}</h1>
+	<p>¿Está seguro de que desea dar de baja al alumno?</p>
+	<form action="{{ url_for('eliminar', id=user.id_user) }}" method="post">
+		<input type="submit" value="Eliminar">
+        <a href="{{ url_for('user') }}">Cancelar</a>
+	</form>
+</body>
+</html>

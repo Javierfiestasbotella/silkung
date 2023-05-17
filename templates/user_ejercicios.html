@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bienvenido {{ nombre }}</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user.css') }}">
+</head>
+<body>
+<header>
+	<nav class="navega">
+		<div class="cajon_nav" id="nav_cajon">
+				<ul class="menu">
+					<li><a href="{{url_for('editar', id=user.id_user)}}">Editar Perfil</a></li>
+					<li><a href="{{url_for('user_ejercicios')}}">Ejercicios</a></li>
+					<li><a href="#contacto" id="mostrar-formulario">Contacto</a></li>
+				</ul>
+        <button onclick="window.location.href='{{ url_for('login') }}'" class="back-button">Salir Sesión</button>
+
+
+		</div>
+	</nav>
+
+
+</header>
+	<h1 class="perfil_title">Perfil de  {{ user.nombre +' '+ user.apellidos }}</h1>
+    <img src="{{ url_for('static', filename='../static/' + user.perfil) }}" alt="Imagen de perfil">
+		 <ul class="datos">
+			<li>Nombre: {{ user.nombre }}</li>
+			<li>Apellidos: {{ user.apellidos }}</li>
+			<li>Email: {{ user.email }}</li>
+			<li>Curso: {{ user.curso }}</li>
+			<li>Edad: {{ user.edad }}</li>
+
+  		</ul>
+<div>
+	<div class="container">
+		<div id="contacto" class="oculto">
+  <h2>Formulario de Contacto</h2>
+  <form action="mailto:sgcov@hotmail.com" method="post" enctype="text/plain">
+              <label for="name">Nombre:</label><br>
+              <input type="text" id="name" name="name" value="{{ user.nombre }}"><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" value="{{ user.email }}"><br>
+              <label for="subject">Asunto:</label><br>
+              <input type="text" id="subject" name="subject"><br>
+              <label for="message">Mensaje:</label><br>
+              <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Borrar">
+            </form>
+</div>
+					<script>
+						var botonMostrarFormulario = document.getElementById("mostrar-formulario");
+var formularioContacto = document.getElementById("contacto");
+
+botonMostrarFormulario.addEventListener("click", function(evento) {
+  evento.preventDefault();
+  formularioContacto.classList.toggle("oculto");
+
+});
+					</script>
+			<h1>Tus Ejercicios</h1>
+				{% for ejercicios in listado: %}
+		<div class="especial">
+			<section>
+					<p class="orange">{{ ejercicios.tipo }} --> {{ ejercicios.tipo }}</p>
+					<p> Repeticiones --> {{ ejercicios.repeticiones }}</p>
+					<p>Respiración --> {{ ejercicios.tipo_respiracion }}</p>
+
+			</section>
+
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+</body>
+</html>
