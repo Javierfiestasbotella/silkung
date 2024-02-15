@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url("../static/msj2.jpg");
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+header {
+    background-color: #FFE6B3; /* Cambiado de #333 a #FFE6B3 */
+    color: black; /* Cambiado de #fff a black */
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.8; /* Este estilo no está en el segundo bloque */
+}
+
+h1 {
+    margin: 0;
+    color: #333333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666666;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px; /* Cambiado de 40px a 20px */
+    opacity: 0.8; /* Este estilo no está en el segundo bloque */
+    background-color: #FFDCB2;
+}
+
+h2 {
+    color: #333333;
+}
+
+p {
+    color: #666666;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: #666666;
+}
+
+/*Boton para volver*/
+.back-button {
+  background-color: #f1f1f1;
+  border: none;
+  color: #555;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  float: right;
+}
+.logo-container {
+	position: fixed;
+	top: 330px;
+	left: 1100px;
+	width: 170px;
+	text-align: left;
+	padding: 10px;
+	opacity: 0.5;
+}
+
+.logo-image {
+	width: 150%;
+	max-width: 100%;
+	height: auto;
+	opacity: 0.9;
+}
+
+#image-container {
+    float: right;
+    margin-top: 5px; /* Ajusta el margen superior según necesites */
+    margin-right: 300px; /* Ajusta la distancia hacia la derecha según necesites */
+}
+
+#masaje-image {
+    max-width: 300px; /* Ajusta el ancho máximo de la imagen según necesites */
+    height: auto;
+}

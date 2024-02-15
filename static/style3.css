@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family:sans-serif;
-	background-image: url("../static/silvia01o.jpg");
+	background-image: url("../static/msj.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -167,7 +167,7 @@ header nav ul li a.active{
   background-color:rgba(167, 170, 175, 0.8);
   padding-top:5px;
   margin-top: 1000px; /* agrega un margen superior de 20px al footer */
-
+  color:black;
   bottom: 0;
 }
 .footer li{
@@ -183,7 +183,7 @@ header nav ul li a.active{
   color:white;
 }
 .footer h1,h2,h3,p,a{
-  color:white;
+  color:black;
   font-family:"Oxygen", Arial, Tahoma, sans-serif;
 
 }
@@ -312,4 +312,25 @@ header nav ul li a.active{
      padding-bottom:10px;
   }
 }
+.logo-container {
+	position: fixed;
+	top: 330px;
+	left: 1100px;
+	width: 170px;
+	text-align: left;
+	padding: 10px;
+	opacity: 0.5;
+}
 
+.logo-image {
+	width: 150%;
+	max-width: 100%;
+	height: auto;
+	opacity: 0.9;
+}
+.whatsapp-link {
+            position: fixed;
+            top: 50px;
+            left: 1200px;
+            z-index: 9999; /* Asegura que esté por encima de otros elementos */
+        }

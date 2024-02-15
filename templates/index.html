@@ -13,14 +13,34 @@
 <body>
 	<header>
 
-</div>
+
 		<div class="logo">Silvia García Cuesta</div>
+		<!--Boton de watsaap-->
+<!--<a href="https://wa.me/645137677" target="_self"></a>  en python-->
+<img src="https://pngimg.com/uploads/whatsapp/whatsapp_PNG5.png" style="width: 75px; height: 60px;" onclick="redirectToWhatsApp(event)">
+<script>
+    function redirectToWhatsApp(event) {
+        // Evita el comportamiento predeterminado del enlace
+        event.preventDefault();
+
+        // Abre la página de WhatsApp en una nueva pestaña
+        window.open('https://wa.me/645137677', '_blank');
+
+        // Redirige al usuario de vuelta al index.html después de un breve retraso
+        setTimeout(function() {
+            window.location.href = '/';
+        }, 500);
+    }
+</script>
+
+
 		<nav>
 			<ul>
 				<li class="sub-menu"><a href="">Información</a>
 					<ul>
 						<li><a href="{{url_for('pilates')}}">Pilates</a></li>
 						<li><a href="{{url_for('qigong')}}">Qigong</a></li>
+						<li><a href="{{url_for('masajes')}}">Masajes</a></li><!-- hay que direccional a masajes -->
 						<li><a href="{{url_for('horarios')}}">Horarios</a></li>
 						<li><a href="{{url_for('precios')}}">Precios</a></li>
 					</ul></li>
@@ -30,18 +50,24 @@
 						<li><a href="{{url_for('galery_pilates')}}">Pilates</a></li>
 						<li><a href="{{url_for('peques')}}">Para niños</a></li>
 						<li><a href="{{url_for('videos_ejercicios')}}">Videos</a></li>
+
 					</ul>
+
 				</li>
 
-				<li><a href="{{url_for('chatbot')}}">Chatbot</a></li>
-				<li><a id="login-link" href="{{url_for('login')}}">Login</a></li>
+				<!-- <li><a href="{{url_for('chatbot')}}">Chatbot</a></li>-->
+				<!-- <li><a id="login-link" href="{{url_for('login')}}">Login</a></li>-->
 
 			</ul>
 
 		</nav>
+
 		<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
 	</header><!-- /header -->
+	<div class="logo-container">
+		<img src="./static/logo_translucido.png" alt="Logo de tu organización o empresa" class="logo-image">
+	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
@@ -62,7 +88,6 @@
 
 
 	</script>
-
 
 <footer class = "footer">
     <div class = "footer-information-container">

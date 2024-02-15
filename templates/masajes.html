@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='masajes.css') }}">
+    <title>Masajes Relajantes y Descontracturantes</title>
+</head>
+<body>
+
+    <header>
+        <h1>Masajes Relajantes y Descontracturantes</h1>
+        <a href="{{ url_for('home') }}#PAgina_principal" class="back-button">Volver</a>
+
+
+        <nav>
+            <ul>
+                <li><a href="#quiromasaje">Quiromasaje</a></li>
+                <li><a href="#shiatsu">Shiatsu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quiromasaje">
+            <div class="logo-container">
+		<img src="./static/logo_translucido.png" alt="Logo de tu organización o empresa" class="logo-image">
+	</div>
+            <h2>Quiromasaje</h2>
+            <p>El quiromasaje es una técnica terapéutica que se utiliza para tratar diferentes dolencias y promover el bienestar físico y mental. Aquí te ofrecemos diferentes tipos de masajes quiromasaje:</p>
+
+            <h3>Masaje Vital y de Relajación</h3>
+              <div id="image-container">
+        <img id="masaje-image" src="" alt="">
+    </div>
+            <ul>
+                <li><a href="#masaje-mano" onclick="showImage('manos.jpg')">Masaje de Manos</a></li>
+                <li><a href="#masaje-brazo" onclick="showImage('brazos.jpg')">Masaje de Brazos</a></li>
+                <li><a href="#masaje-pie" onclick="showImage('pies.jpg')">Masaje de Pies</a></li>
+                <li><a href="#masaje-pierna" onclick="showImage('piernas.jpg')">Masaje de Piernas</a></li>
+                <li><a href="#masaje-espalda" onclick="showImage('espalda.jpg')">Masaje de Espalda</a></li>
+                <li><a href="#masaje-hombro" onclick="showImage('hombros.jpg')">Masaje de Hombros</a></li>
+                <li><a href="#masaje-cuello" onclick="showImage('cuello.jpg')">Masaje de Cuello</a></li>
+                <li><a href="#masaje-abdomen" onclick="showImage('abdomen.jpg')">Masaje de Abdomen</a></li>
+                <li><a href="#masaje-general" onclick="showImage('completo.jpg')">Masaje General</a></li>
+                <li><a href="#masaje-facial" onclick="showImage('facial.jpg')">Masaje Facial</a></li>
+            </ul>
+
+            <h3>Masaje Reequilibrante</h3>
+            <ul>
+                <li><a href="#asma">Tratamiento del Asma</a></li>
+                <li><a href="#celulitis">Tratamiento de Celulitis</a></li>
+                <li><a href="#contracturas">Tratamiento de Contracturas</a></li>
+                <li><a href="#estreñimiento">Tratamiento de Estreñimiento</a></li>
+                <li><a href="#tension-cervical">Tratamiento de Tensión en Zona Cervical</a></li>
+                <li><a href="#tension-dorsal">Tratamiento de Tensión en Zona Dorsal</a></li>
+                <li><a href="#tension-lumbar">Tratamiento de Tensión en Zona Lumbar</a></li>
+                <li><a href="#fibromialgia">Tratamiento de Fibromialgia</a></li>
+                <li><a href="#ciatica">Tratamiento de Ciática</a></li>
+                <li><a href="#circulatorio">Tratamiento Circulatorio</a></li>
+            </ul>
+
+            <h3>Masaje Deportivo</h3>
+
+            <ul>
+                <li><a href="#pre-competicion">Masaje Pre-Competición</a></li>
+                <li><a href="#durante-competicion">Masaje Durante Competición</a></li>
+                <li><a href="#post-competicion">Masaje Post-Competición</a></li>
+                <li><a href="#cyriax">Técnica de Cyriax</a></li>
+                <li><a href="#esguinces">Tratamiento de Esguinces</a></li>
+                <li><a href="#fascitis">Tratamiento de Fascitis Plantar</a></li>
+                <li><a href="#agujetas">Tratamiento de Agujetas</a></li>
+                <li><a href="#calambres">Tratamiento de Calambres</a></li>
+                <li><a href="#desgarros">Tratamiento de Desgarros</a></li>
+                <li><a href="#roturas">Tratamiento de Roturas Musculares</a></li>
+                <li><a href="#abductores">Tratamiento de Lesiones de Abductores</a></li>
+                <li><a href="#luxaciones">Tratamiento de Luxaciones</a></li>
+                <li><a href="#tejido-conjuntivo">Tratamiento de Tejido Conjuntivo</a></li>
+                <li><a href="#hombro-dislocado">Tratamiento de Hombro Dislocado</a></li>
+            </ul>
+        </section>
+
+        <section id="shiatsu">
+            <h2>Shiatsu</h2>
+            <p>El shiatsu es una técnica terapéutica originaria de Japón que se basa en la aplicación de presión con los dedos y las palmas de las manos para aliviar la tensión y promover el flujo de energía en el cuerpo. Aquí te ofrecemos dos tipos de masajes shiatsu:</p>
+
+            <h3>Shiatsu Facial Craneal</h3>
+            <p>Descripción del Shiatsu Facial Craneal.</p>
+            <a href="#shiatsu-facial-craneal">Más información</a>
+
+            <h3>Shiatsu Corporal</h3>
+            <p>Descripción del Shiatsu Corporal.</p>
+            <a href="#shiatsu-corporal">Más información</a>
+        </section>
+         <!-- Contenedor de la imagen -->
+
+    </main>
+
+    <footer>
+        <p>© 2024 Masajes Relajantes. Todos los derechos reservados.</p>
+    </footer>
+<script>
+    // Función para mostrar la imagen
+    function showImage(imageName) {
+        var image = document.getElementById('masaje-image');
+        image.src = "{{ url_for('static', filename='') }}" + imageName;
+    }
+</script>
+</body>
+</html>

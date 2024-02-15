@@ -5,10 +5,12 @@
 
 body {
   background: linear-gradient(#2c3e50, #bdc3c7, pink);
-  background-image: url("../static/silvia01o.jpg");
-  background-size: cover;
+  background-image: url("../static/logo_translucido.png");
+  background-size: 70%; /* Ajusta el tamaño de la imagen */
   opacity: 0.8;
   z-index: -1; /* Para que la capa esté detrás del contenido del body */
+  background-position: center top; /* Ajusta la posición vertical de la imagen */
+
 }
 .container {
   background-color: #f9f9f9;

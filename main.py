@@ -29,6 +29,17 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 def home():
     return render_template('index.html')
 
+#%%
+
+@app.route('/whatsapp')
+def handle_whatsapp():
+    # Aquí deberías realizar la función para enviar el mensaje por WhatsApp
+    # Después de enviar el mensaje, puedes redirigir al usuario de regreso al index.html
+    return redirect(url_for('home'))
+
+#%%
+
+
 @app.route('/user', methods=['POST'])
 def enviar_email():
     asunto = request.form['asunto']
@@ -175,6 +186,10 @@ def qigong():
 @app.route('/pilates')#ruta hacia la página de informacion sobre pilates
 def pilates():
     return render_template('informacion_pilates.html')
+
+@app.route('/masajes')#ruta hacia la página de informacion sobre masajes
+def masajes():
+    return render_template('masajes.html')
 
 
 @app.route('/galery_chikung')#ruta hacia la página imagenes de qigong
