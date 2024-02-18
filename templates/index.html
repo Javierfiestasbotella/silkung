@@ -12,12 +12,9 @@
 </head>
 <body>
 	<header>
-
-
 		<div class="logo">Silvia García Cuesta</div>
 		<!--Boton de watsaap-->
 <!--<a href="https://wa.me/645137677" target="_self"></a>  en python-->
-<img src="https://pngimg.com/uploads/whatsapp/whatsapp_PNG5.png" style="width: 75px; height: 60px;" onclick="redirectToWhatsApp(event)">
 <script>
     function redirectToWhatsApp(event) {
         // Evita el comportamiento predeterminado del enlace
@@ -65,9 +62,27 @@
 		<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
 	</header><!-- /header -->
-	<div class="logo-container">
-		<img src="./static/logo_translucido.png" alt="Logo de tu organización o empresa" class="logo-image">
-	</div>
+
+	<div class="container">
+        <div class="column">
+            <img src="static/msj.jpg" alt="Imagen 1">
+        </div>
+        <div class="column">
+            <img src="static/q-fondo01.jpg" alt="Imagen 2">
+        </div>
+        <div class="column">
+            <img src="static/pil13.jpg" alt="Imagen 3">
+        </div>
+    </div>
+
+
+<div id="cookie-banner">
+    <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio web, aceptas todas las cookies de acuerdo con nuestra <a href="#">política de cookies</a>.</p>
+    <button id="accept-cookies">Aceptar</button>
+</div>
+
+
+
 	<script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
@@ -89,49 +104,94 @@
 
 	</script>
 
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var cookieBanner = document.getElementById("cookie-banner");
+        var acceptCookiesButton = document.getElementById("accept-cookies");
+
+        // Verificar si ya se ha aceptado la cookie
+        if (getCookie("cookiesAccepted") === "true") {
+            cookieBanner.style.display = "none"; // Ocultar el banner si ya se ha aceptado
+        }
+
+        acceptCookiesButton.addEventListener("click", function() {
+            // Ocultar el banner de cookies cuando el usuario hace clic en Aceptar
+            cookieBanner.style.display = "none";
+            // Establecer una cookie que registre que el usuario ha aceptado las cookies
+            setCookie("cookiesAccepted", "true", 365); // La cookie caduca en 365 días
+        });
+
+        // Función para establecer una cookie
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        // Función para obtener el valor de una cookie
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+    });
+</script>
+
+
 <footer class = "footer">
+<div class="image-container">
+	<img class="logo-container" src="./static/logo_translucido.png" alt="Logo de tu organización o empresa" class="logo-image">
+</div>
+	<div class="logo-container">
+
+	</div>
     <div class = "footer-information-container">
+
         <div class = "company-info-container">
               <h3>INFORMACIÓN</h3>
 
                 <p>Silvia García Cuesta</p>
                 <p>Zona Malaga</p>
                 <p>Phone:+34 645 137 677</p>
-                <p>Email:sgcov@hotmail.com</p>
+                <p>Email:sgcov@hotmail.com</p> </div>
 
-
-
-         </div>
          <div class = "our-location-container">
-               <h3>LOCALIZACIÓN</h3>
-			 <a href="https://goo.gl/maps/HyNVHErQwrB29NJEA" target="_blank" class="fa fa-localizacion">Ubicación o Zona</a>
 
+               <h3>LOCALIZACIÓN</h3>
+
+			 <a href="https://goo.gl/maps/HyNVHErQwrB29NJEA" target="_blank" class="fa fa-localizacion">Ubicación o Zona</a>
          </div>
          <div class = "social-media-container">
                 <h3>REDES SOCIALES</h3>
                  <a href="#" class="fa fa-linkedin"></a>
                 <a href="https://www.facebook.com/TU_USUARIO_DE_FACEBOOK" class="fa fa-facebook"></a>
                 <a href="https://www.instagram.com/TU_USUARIO_DE_INSTAGRAM/" class="fa fa-instagram"></a>
-         </div>
-
-
-         </div>
+		 </div>
 
 
 
-     </div>
 
-  <div class = "footer-developer-container">
+
         <div class = "footer-developed-by">
-            <p>&copy john doe. all rights reserved</p>
+            <p>&copy Silkung. all rights reserved</p>
              <p>design by <a href = "kbgwebdesign.com">kbgwebdesign.com</a></p>
+						<img class="wat" src="data:image/jpeg;base64,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" style="width: 75px; height: 60px;" onclick="redirectToWhatsApp(event)">
+
         </div>
         <div class = "footer-privacy-container">
 			<a href="https://www.iubenda.com/privacy-policy/65822135" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Política de Privacidad "target="_blank">Política de Privacidad</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
 
-         </div>
-  </div>
-
+         </div></div>
+</div>
 </footer>
 </body>
 </html>

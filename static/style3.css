@@ -1,13 +1,11 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-family:sans-serif;
-	background-image: url("../static/msj.jpg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: transparent; /* Establece el fondo del body como transparente */
 }
+
+
 #login-link {
       color: white;
       background-color: #007bff;
@@ -164,9 +162,9 @@ header nav ul li a.active{
  /*footer*/
 .footer{
   display:grid;
-  background-color:rgba(167, 170, 175, 0.8);
-  padding-top:5px;
-  margin-top: 1000px; /* agrega un margen superior de 20px al footer */
+  background: linear-gradient(to bottom, rgba(50, 50, 50, 0.8), rgba(255, 255, 255, 0.8)); /* De gris oscuro a blanco */
+
+  margin-top: 0; /* agrega un margen superior de 20px al footer */
   color:black;
   bottom: 0;
 }
@@ -233,6 +231,7 @@ header nav ul li a.active{
 }
 .our-location-container .fa-localizacion {
   background-color: #007FFF; /* color mapa */
+  color:black;
 }
 .social-media-container .fa-instagram {
   background-color: #E1306C; /* color morado rosa de Instagram */
@@ -254,6 +253,7 @@ header nav ul li a.active{
 }
 .footer-privacy-container a{
   margin-right:15px;
+  display:flex;
 }
 .footer-privacy-container a:hover{
   text-decoration:underline;
@@ -294,11 +294,19 @@ header nav ul li a.active{
 
 
   }
-  .company-info-container{
+  .company-info-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding-bottom: 10px;
+    border-bottom: none;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
 
-    padding-bottom:10px;
-    border-bottom:none;
-  }
+
+
+
+
   .our-location-container{
     border-bottom:solid white 1px;
     padding-bottom:10px;
@@ -312,25 +320,102 @@ header nav ul li a.active{
      padding-bottom:10px;
   }
 }
-.logo-container {
-	position: fixed;
-	top: 330px;
-	left: 1100px;
-	width: 170px;
-	text-align: left;
-	padding: 10px;
-	opacity: 0.5;
-}
+/*.logo-container {
 
+	top: 130px;
+	left: 600px;
+	width: 90px;
+	text-align: center;
+	opacity: 0.5;
+}*/
+.logo-container {
+    width: 90px;
+    position: relative; /* Necesario para usar coordenadas */
+    top: 0; /* Mueve la imagen hacia abajo */
+     /* Mueve la imagen hacia la derecha */
+    left:650px;
+    margin-top: 0; /* Mueve la imagen hacia abajo */
+    margin-right: 50px; /* Mueve la imagen hacia la derecha */
+}
+.wat{
+ position: relative; /* Necesario para usar coordenadas */
+    top: 40px; /* Mueve la imagen hacia abajo */
+     /* Mueve la imagen hacia la derecha */
+    left:200px;
+border-radius: 10px; /* Curvatura de 10 píxeles en todas las esquinas */
+    margin-top: 0; /* Mueve la imagen hacia abajo */
+    margin-right: 0; /* Mueve la imagen hacia la derecha */
+}
 .logo-image {
 	width: 150%;
+
 	max-width: 100%;
 	height: auto;
 	opacity: 0.9;
 }
 .whatsapp-link {
-            position: fixed;
-            top: 50px;
-            left: 1200px;
-            z-index: 9999; /* Asegura que esté por encima de otros elementos */
-        }
+    position: fixed;
+    top: 50px;
+    left: 1200px;
+    z-index: 9999;
+    border-radius: 50%; /* Establece el radio de las esquinas para hacer el botón redondo */
+    padding: 10px; /* Añade relleno para asegurar que el botón sea lo suficientemente grande */
+    background-color: green; /* Ajusta el color de fondo según sea necesario */
+}
+
+
+.container {
+    display: flex;
+    min-height: 100vh; /* Establece una altura mínima de 100vh para el contenedor de las imágenes */
+    overflow: hidden; /* Evita que las imágenes sobresalgan del contenedor */
+    background-color: blue; /* Coloca el fondo azul solo en el contenedor de las imágenes */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.column {
+    flex: 1;
+    overflow: hidden;
+    background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%); /* Aplica un degradado horizontal de transparente a blanco transparente */
+
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container {
+    display: flex; /* Hace que los elementos dentro de este contenedor se muestren en línea */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#accept-cookies {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#accept-cookies:hover {
+    background-color: #45a049;
+}
