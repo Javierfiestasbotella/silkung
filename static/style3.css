@@ -99,7 +99,7 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a.active{
-	background:#2196f3;
+	background:#D3D3D3;
 }
 
 .menu-toggle{
@@ -339,7 +339,7 @@ header nav ul li a.active{
 }
 .wat{
  position: relative; /* Necesario para usar coordenadas */
-    top: 40px; /* Mueve la imagen hacia abajo */
+    top: 60px; /* Mueve la imagen hacia abajo */
      /* Mueve la imagen hacia la derecha */
     left:200px;
 border-radius: 10px; /* Curvatura de 10 píxeles en todas las esquinas */
@@ -368,7 +368,7 @@ border-radius: 10px; /* Curvatura de 10 píxeles en todas las esquinas */
     display: flex;
     min-height: 100vh; /* Establece una altura mínima de 100vh para el contenedor de las imágenes */
     overflow: hidden; /* Evita que las imágenes sobresalgan del contenedor */
-    background-color: blue; /* Coloca el fondo azul solo en el contenedor de las imágenes */
+    background-color: #FFFFF0; /* Coloca el fondo azul solo en el contenedor de las imágenes */
     margin: 0; /* Elimina el margen predeterminado */
 }
 
@@ -376,9 +376,12 @@ border-radius: 10px; /* Curvatura de 10 píxeles en todas las esquinas */
     flex: 1;
     overflow: hidden;
     background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%); /* Aplica un degradado horizontal de transparente a blanco transparente */
+    margin-right: 10px; /* Agrega margen a la derecha de cada columna */
 
 }
-
+.column:last-child {
+    margin-right: 0; /* Elimina el margen derecho de la última columna para evitar espacio adicional */
+}
 .column img {
     width: 100%;
     height: 100%;
@@ -418,4 +421,14 @@ border-radius: 10px; /* Curvatura de 10 píxeles en todas las esquinas */
 
 #accept-cookies:hover {
     background-color: #45a049;
+}
+/* Estilo inicial de la imagen */
+.imagen {
+    opacity: 0; /* La imagen está inicialmente invisible */
+    transition: opacity 1s ease; /* Transición de la opacidad durante 1 segundo */
+}
+
+/* Estilo para hacer visible la imagen */
+.imagen-visible {
+    opacity: 1; /* La imagen es completamente visible */
 }

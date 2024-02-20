@@ -35,15 +35,12 @@ h1{
 }
 
 
-.galeria img{
-    width: 100%;
+.galeria img {
+    max-width: 100%; /* Establece un tamaño máximo para la imagen */
+    max-height: 100%; /* Establece un tamaño máximo para la imagen */
     vertical-align: top;
-    height: 300px;
-    object-fit: cover;
+    object-fit: cover; /* Ajusta la imagen al contenedor manteniendo su proporción */
     transition: transform 0.5s;
-    max-height: 80vh; /* Agregado para limitar la altura máxima de la imagen */
-
-
 }
 
 .galeria > a{
@@ -102,9 +99,9 @@ light-box img{
 a{
 size: 20px;
 }
-.next{
+.next{/*flechita que pasa de imagen a imagen*/
     display: block;
-    background: #851919;
+    background: rgba(192, 192, 192, 0.7);
     color: #fff;
     height: 30px;
     width: 30px;

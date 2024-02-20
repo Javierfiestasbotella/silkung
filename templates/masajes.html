@@ -24,60 +24,74 @@
     <main>
         <section id="quiromasaje">
             <div class="logo-container">
-		<img src="./static/logo_translucido.png" alt="Logo de tu organización o empresa" class="logo-image">
+		<img src="./static/logo_new01.png" alt="Logo de tu organización o empresa" class="logo-image">
 	</div>
             <h2>Quiromasaje</h2>
             <p>El quiromasaje es una técnica terapéutica que se utiliza para tratar diferentes dolencias y promover el bienestar físico y mental. Aquí te ofrecemos diferentes tipos de masajes quiromasaje:</p>
 
             <h3>Masaje Vital y de Relajación</h3>
-              <div id="image-container">
-        <img id="masaje-image" src="" alt="">
-    </div>
-            <ul>
-                <li><a href="#masaje-mano" onclick="showImage('manos.jpg')">Masaje de Manos</a></li>
-                <li><a href="#masaje-brazo" onclick="showImage('brazos.jpg')">Masaje de Brazos</a></li>
-                <li><a href="#masaje-pie" onclick="showImage('pies.jpg')">Masaje de Pies</a></li>
-                <li><a href="#masaje-pierna" onclick="showImage('piernas.jpg')">Masaje de Piernas</a></li>
-                <li><a href="#masaje-espalda" onclick="showImage('espalda.jpg')">Masaje de Espalda</a></li>
-                <li><a href="#masaje-hombro" onclick="showImage('hombros.jpg')">Masaje de Hombros</a></li>
-                <li><a href="#masaje-cuello" onclick="showImage('cuello.jpg')">Masaje de Cuello</a></li>
-                <li><a href="#masaje-abdomen" onclick="showImage('abdomen.jpg')">Masaje de Abdomen</a></li>
-                <li><a href="#masaje-general" onclick="showImage('completo.jpg')">Masaje General</a></li>
-                <li><a href="#masaje-facial" onclick="showImage('facial.jpg')">Masaje Facial</a></li>
-            </ul>
+            <div class="imagen imagen-visible" id="image-container" >
+    <img class="imagen imagen-visible" id="masaje-image" src="" alt="">
+</div>
+<ul>
+    <li><a class="imagen imagen-visible" href="#masaje-mano" onclick="showImage('manos.jpg')">Masaje de Manos</a></li>
+    <li><a class="imagen imagen-visible" href="#masaje-brazo" onclick="showImage('brazos.jpg')">Masaje de Brazos</a></li>
+    <li><a class="imagen imagen-visible" href="#masaje-pie" onclick="showImage('pies.jpg')">Masaje de Pies</a></li>
+    <li><a class="imagen imagen-visible" href="#masaje-pierna" onclick="showImage('piernas.jpg')">Masaje de Piernas</a></li>
+    <li><a class="imagen imagen-visible" href="#masaje-espalda" onclick="showImage('espalda.jpg')">Masaje de Espalda</a></li>
+    <li><a class="imagen imagen-visible" href="#masaje-hombro" onclick="showImage('hombros.jpg')">Masaje de Hombros</a></li>
+    <li><a class="imagen imagen-visible" href="#masaje-cuello" onclick="showImage('cuello.jpg')">Masaje de Cuello</a></li>
+    <li><a class="imagen imagen-visible" href="#masaje-abdomen" onclick="showImage('abdomen.jpg')">Masaje de Abdomen</a></li>
+    <li><a class="imagen imagen-visible" href="#masaje-general" onclick="showImage('completo.jpg')">Masaje General</a></li>
+    <li><a class="imagen imagen-visible" href="#masaje-facial" onclick="showImage('facial.jpg')">Masaje Facial</a></li>
+</ul>
+
 
             <h3>Masaje Reequilibrante</h3>
+            <div id="descripcion-container">
+    <div id="descripcion-texto">
+        <!-- Aquí se mostrará el texto de la descripción -->
+    </div>
+</div>
             <ul>
-                <li><a href="#asma">Tratamiento del Asma</a></li>
-                <li><a href="#celulitis">Tratamiento de Celulitis</a></li>
-                <li><a href="#contracturas">Tratamiento de Contracturas</a></li>
-                <li><a href="#estreñimiento">Tratamiento de Estreñimiento</a></li>
-                <li><a href="#tension-cervical">Tratamiento de Tensión en Zona Cervical</a></li>
-                <li><a href="#tension-dorsal">Tratamiento de Tensión en Zona Dorsal</a></li>
-                <li><a href="#tension-lumbar">Tratamiento de Tensión en Zona Lumbar</a></li>
-                <li><a href="#fibromialgia">Tratamiento de Fibromialgia</a></li>
-                <li><a href="#ciatica">Tratamiento de Ciática</a></li>
-                <li><a href="#circulatorio">Tratamiento Circulatorio</a></li>
-            </ul>
+    <li><a class="imagen2" href="#asma" onclick="mostrarDescripcion('asma')">Tratamiento del Asma</a></li>
+    <li><a class="imagen2" href="#celulitis" onclick="mostrarDescripcion('celulitis')">Tratamiento de Celulitis</a></li>
+    <li><a class="imagen2" href="#contracturas" onclick="mostrarDescripcion('contracturas')">Tratamiento de Contracturas</a></li>
+    <li><a class="imagen2" href="#estreñimiento" onclick="mostrarDescripcion('estreñimiento')">Tratamiento de Estreñimiento</a></li>
+    <li><a class="imagen2" href="#tension-cervical" onclick="mostrarDescripcion('tension-cervical')">Tratamiento de Tensión en Zona Cervical</a></li>
+    <li><a class="imagen2" href="#tension-dorsal" onclick="mostrarDescripcion('tension-dorsal')">Tratamiento de Tensión en Zona Dorsal</a></li>
+    <li><a class="imagen2" href="#tension-lumbar" onclick="mostrarDescripcion('tension-lumbar')">Tratamiento de Tensión en Zona Lumbar</a></li>
+    <li><a class="imagen2" href="#fibromialgia" onclick="mostrarDescripcion('fibromialgia')">Tratamiento de Fibromialgia</a></li>
+    <li><a class="imagen2" href="#ciatica" onclick="mostrarDescripcion('ciatica')">Tratamiento de Ciática</a></li>
+    <li><a class="imagen2" href="#circulatorio" onclick="mostrarDescripcion('circulatorio')">Tratamiento Circulatorio</a></li>
+</ul>
+
+
 
             <h3>Masaje Deportivo</h3>
 
+    <div id="descripcion2-container">
+    <div id="descripcion2-texto">
+        <!-- Aquí se mostrará el texto de la descripción -->
+    </div>
+</div>
             <ul>
-                <li><a href="#pre-competicion">Masaje Pre-Competición</a></li>
-                <li><a href="#durante-competicion">Masaje Durante Competición</a></li>
-                <li><a href="#post-competicion">Masaje Post-Competición</a></li>
-                <li><a href="#cyriax">Técnica de Cyriax</a></li>
-                <li><a href="#esguinces">Tratamiento de Esguinces</a></li>
-                <li><a href="#fascitis">Tratamiento de Fascitis Plantar</a></li>
-                <li><a href="#agujetas">Tratamiento de Agujetas</a></li>
-                <li><a href="#calambres">Tratamiento de Calambres</a></li>
-                <li><a href="#desgarros">Tratamiento de Desgarros</a></li>
-                <li><a href="#roturas">Tratamiento de Roturas Musculares</a></li>
-                <li><a href="#abductores">Tratamiento de Lesiones de Abductores</a></li>
-                <li><a href="#luxaciones">Tratamiento de Luxaciones</a></li>
-                <li><a href="#tejido-conjuntivo">Tratamiento de Tejido Conjuntivo</a></li>
-                <li><a href="#hombro-dislocado">Tratamiento de Hombro Dislocado</a></li>
-            </ul>
+    <li><a class="imagen2" href="#pre-competicion" onclick="mostrarDescripcion('#pre-competicion')">Masaje Pre-Competición</a></li>
+    <li><a class="imagen2" href="#durante-competicion" onclick="mostrarDescripcion('#durante-competicion')">Masaje Durante Competición</a></li>
+    <li><a class="imagen2" href="#post-competicion" onclick="mostrarDescripcion('#post-competicion')">Masaje Post-Competición</a></li>
+    <li><a class="imagen2" href="#cyriax" onclick="mostrarDescripcion('#cyriax')">Técnica de Cyriax</a></li>
+    <li><a class="imagen2" href="#esguinces" onclick="mostrarDescripcion('#esguinces')">Tratamiento de Esguinces</a></li>
+    <li><a class="imagen2" href="#fascitis" onclick="mostrarDescripcion('#fascitis')">Tratamiento de Fascitis Plantar</a></li>
+    <li><a class="imagen2" href="#agujetas" onclick="mostrarDescripcion('#agujetas')">Tratamiento de Agujetas</a></li>
+    <li><a class="imagen2" href="#calambres" onclick="mostrarDescripcion('#calambres')">Tratamiento de Calambres</a></li>
+    <li><a class="imagen2" href="#desgarros" onclick="mostrarDescripcion('#desgarros')">Tratamiento de Desgarros</a></li>
+    <li><a class="imagen2" href="#roturas" onclick="mostrarDescripcion('#roturas')">Tratamiento de Roturas Musculares</a></li>
+    <li><a class="imagen2" href="#abductores" onclick="mostrarDescripcion('#abductores')">Tratamiento de Lesiones de Abductores</a></li>
+    <li><a class="imagen2" href="#luxaciones" onclick="mostrarDescripcion('#luxaciones')">Tratamiento de Luxaciones</a></li>
+    <li><a class="imagen2" href="#tejido-conjuntivo" onclick="mostrarDescripcion('#tejido-conjuntivo')">Tratamiento de Tejido Conjuntivo</a></li>
+    <li><a class="imagen2" href="#hombro-dislocado" onclick="mostrarDescripcion('#hombro-dislocado')">Tratamiento de Hombro Dislocado</a></li>
+</ul>
+
         </section>
 
         <section id="shiatsu">
@@ -106,5 +120,113 @@
         image.src = "{{ url_for('static', filename='') }}" + imageName;
     }
 </script>
+<script>
+    // Función para mostrar la descripción
+function showDescription(description) {
+    var descripcionContainer = document.getElementById('descripcion-container');
+    var descripcionTexto = document.getElementById('descripcion-texto');
+
+    // Mostrar el contenedor de descripción
+    descripcionContainer.style.display = 'block';
+    // Mostrar el texto de la descripción
+    descripcionTexto.textContent = description;
+}
+
+// Event listeners para los enlaces de tratamiento
+document.querySelectorAll('ul li a').forEach(function(enlace) {
+    enlace.addEventListener('click', function(evento) {
+        evento.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+        var descripcion = obtenerDescripcion(this.getAttribute('href'));
+        showDescription(descripcion);
+    });
+});
+function obtenerDescripcion(enlace) {
+    switch (enlace) {
+        case '#asma':
+            return "El tratamiento del Asma se centra en controlar los síntomas y prevenir ataques de asma. Incluye el uso de inhaladores, medicamentos antiinflamatorios y evitar los desencadenantes.";
+        case '#celulitis':
+            return "El tratamiento de Celulitis implica terapias para mejorar la circulación sanguínea y linfática, así como procedimientos como la mesoterapia, la radiofrecuencia y la terapia láser.";
+        case '#contracturas':
+            return "El tratamiento de Contracturas consiste en aplicar calor local, masajes terapéuticos, estiramientos suaves y reposo para aliviar la tensión muscular y mejorar la movilidad.";
+        case '#estreñimiento':
+            return "El tratamiento de Estreñimiento se basa en aumentar la ingesta de fibra, beber suficiente agua, realizar ejercicio regularmente y, en algunos casos, el uso de laxantes suaves.";
+        case '#tension-cervical':
+            return "El tratamiento de Tensión en Zona Cervical incluye masajes relajantes, estiramientos cervicales, aplicación de calor y terapia física para aliviar la rigidez y el dolor.";
+        case '#tension-dorsal':
+            return "El tratamiento de Tensión en Zona Dorsal se enfoca en liberar la tensión muscular a través de masajes profundos, terapia de tejido blando y ejercicios de fortalecimiento postural.";
+        case '#tension-lumbar':
+            return "El tratamiento de Tensión en Zona Lumbar implica terapia física, ejercicios de estiramiento, masajes descontracturantes y técnicas de relajación para aliviar el dolor y mejorar la movilidad.";
+        case '#fibromialgia':
+            return "El tratamiento de Fibromialgia se basa en un enfoque multidisciplinario que incluye medicamentos para aliviar el dolor, terapia física, ejercicio suave, terapia cognitivo-conductual y técnicas de manejo del estrés.";
+        case '#ciatica':
+            return "El tratamiento de Ciática incluye terapia física, ejercicios de estiramiento, medicamentos para aliviar el dolor y en casos graves, intervenciones quirúrgicas para liberar la presión sobre el nervio ciático.";
+        case '#circulatorio':
+            return "El tratamiento Circulatorio se centra en mejorar la circulación sanguínea a través de masajes circulatorios, ejercicio regular, dieta saludable, evitar el tabaquismo y controlar la presión arterial.";
+        default:
+            descripcionContainer.style.display = 'none'; // Oculta el contenedor de descripción si no se encuentra una descripción
+            break;
+    }
+}
+</script>
+
+    <script>
+    // Función para mostrar la descripción
+    function showDescription2(description, containerId, textoId) {
+        var descripcionContainer = document.getElementById(containerId);
+        var descripcionTexto = document.getElementById(textoId);
+
+        // Mostrar el contenedor de descripción
+        descripcionContainer.style.display = 'block';
+        // Mostrar el texto de la descripción
+        descripcionTexto.textContent = description;
+    }
+
+    // Event listeners para los enlaces de tratamiento
+    document.querySelectorAll('ul li a.imagen2').forEach(function(enlace) {
+        enlace.addEventListener('click', function(evento) {
+            evento.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+            var descripcion = mostrarDescripcion(this.getAttribute('href'));
+            showDescription2(descripcion, 'descripcion2-container', 'descripcion2-texto');
+        });
+    });
+
+    function mostrarDescripcion(tratamiento) {
+        switch (tratamiento) {
+            case '#pre-competicion':
+                return "El Masaje Pre-Competición se enfoca en preparar los músculos para el esfuerzo físico, mejorando la circulación y flexibilidad.";
+            case '#durante-competicion':
+                return "El Masaje Durante Competición se realiza para aliviar la tensión muscular y mejorar el rendimiento durante la actividad deportiva.";
+            case '#post-competicion':
+                return "El Masaje Post-Competición ayuda a reducir la fatiga muscular, prevenir lesiones y acelerar la recuperación después del ejercicio intenso.";
+            case '#cyriax':
+                return "La Técnica de Cyriax se utiliza para el diagnóstico y tratamiento de lesiones musculoesqueléticas, aplicando técnicas de masaje y manipulación.";
+            case '#esguinces':
+                return "El Tratamiento de Esguinces incluye terapia física, vendajes, ejercicios de rehabilitación y técnicas de prevención de recaídas.";
+            case '#fascitis':
+                return "El Tratamiento de Fascitis Plantar se centra en reducir la inflamación y el dolor en la planta del pie mediante estiramientos, terapia física y uso de plantillas.";
+            case '#agujetas':
+                return "El Tratamiento de Agujetas consiste en reposo, aplicación de calor, masajes suaves y estiramientos para aliviar la rigidez muscular.";
+            case '#calambres':
+                return "El Tratamiento de Calambres se realiza mediante estiramientos, masajes, hidratación adecuada y suplementos para corregir deficiencias minerales.";
+            case '#desgarros':
+                return "El Tratamiento de Desgarros Musculares varía según la gravedad, desde reposo y aplicación de hielo hasta terapia física y, en casos graves, cirugía.";
+            case '#roturas':
+                return "El Tratamiento de Roturas Musculares depende de la localización y gravedad de la lesión, e incluye reposo, aplicación de hielo, vendajes y rehabilitación.";
+            case '#abductores':
+                return "El Tratamiento de Lesiones de Abductores se basa en terapia física, ejercicios de fortalecimiento y estiramientos para recuperar la funcionalidad.";
+            case '#luxaciones':
+                return "El Tratamiento de Luxaciones implica la reducción de la articulación dislocada seguida de inmovilización, terapia física y, en algunos casos, cirugía.";
+            case '#tejido-conjuntivo':
+                return "El Tratamiento de Tejido Conjuntivo incluye terapia manual, estiramientos y ejercicios para mejorar la elasticidad y función del tejido conectivo.";
+            case '#hombro-dislocado':
+                return "El Tratamiento de Hombro Dislocado comienza con la reducción de la dislocación seguida de inmovilización, terapia física y ejercicios de fortalecimiento.";
+            default:
+                return ""; // Devuelve una cadena vacía si no se encuentra una descripción
+        }
+    }
+
+</script>
+
+
 </body>
 </html>
