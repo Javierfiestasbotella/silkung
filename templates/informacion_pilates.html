@@ -2,44 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel = 'stylesheet' href="{{url_for('static', filename='qigong.css')}}">
-
-    <title>Informacion sobre Pilates</title>
-
+    <link rel="stylesheet" href="{{url_for('static', filename='qigong.css')}}">
+    <title>Información sobre Pilates</title>
 </head>
 <body>
     <header>
         <h1 class="especial">Pilates con Silvia García</h1>
-    <img src="./static/logo_translucido.png" alt="Logo de tu organización o empresa" width="150">
-
-<button onclick="window.history.back();" class="back-button">Volver</button>
-        <!-- <button onclick="window.location.href='http://ejemplo.com'" class="back-button">Volver</button>-->
-
+        <button onclick="window.history.back();" class="back-button">Volver</button>
     </header>
 
     <main>
-        <section id="quienes-somos">
-            <h2>Quiénes somos</h2>
-            <p>Soy monitora especializada en Pilates que ofrezco clases para todos los niveles, desde principiantes hasta avanzados. Nuestros instructores están certificados y tienen años de experiencia en la enseñanza del método Pilates.</p>
-            <p>En nuestro centro, nos enfocamos en mejorar la salud y el bienestar de nuestros estudiantes a través del Pilates, que es una forma de ejercicio de bajo impacto que fortalece el cuerpo, mejora la postura y reduce el estrés.</p>
+        <section id="quienes-somos" class="boton">
+            <h2>Quién soy</h2>
+            <p>Soy monitora especializada en Pilates y ofrezco clases para todos los niveles, desde principiantes hasta avanzados. Mis títulos están certificados y tengo experiencia en la enseñanza del método Pilates.</p>
+            <p>En mi centro, me enfoco en mejorar la salud y el bienestar de nuestros estudiantes a través del Pilates, que es una forma de ejercicio de bajo impacto que fortalece el cuerpo, mejora la postura y reduce el estrés.</p>
         </section>
-        <section id="clases">
+        <section id="clases" class="boton">
             <h2>Clases</h2>
-            <p>Ofrezco una variedad de clases de Pilates para satisfacer las necesidades de nuestros estudiantes. Estas son algunas de las clases que ofrecemos:</p>
+            <p>Ofrezco una variedad de clases de Pilates para satisfacer las necesidades de nuestros estudiantes. Estas son algunas de las clases que ofrezco:</p>
             <ul>
-                <li>Clases de Pilates mat</li>
-                <li>Clases de Pilates con máquinas</li>
+                <li>Clases de Pilates</li>
                 <li>Clases de Pilates para embarazadas</li>
                 <li>Clases de Pilates para personas mayores</li>
                 <li>Clases de Pilates para niños</li>
             </ul>
         </section>
-        <section id="precios">
+        <section id="precios" class="boton">
             <h2>Precios</h2>
-            <p>Las clases de Pilates tienen precios accesibles y ofrezco planes de membresía mensuales para aquellos que deseen asistir regularmente. También ofrezco paquetes de clases para aquellos que deseen pagar por adelantado.</p>
+            <p>Mis clases de Pilates tienen precios accesibles y ofrezco planes de membresía mensuales para aquellos que deseen asistir regularmente. También ofrezco paquetes de clases para aquellos que deseen pagar por adelantado.</p>
             <p>Ponte en contacto con nosotros para obtener más información sobre nuestros precios y planes de membresía.</p>
         </section>
-        <section id="contacto">
+        <section id="contacto" class="boton">
             <h2>Contacto</h2>
             <p>Si tienes alguna pregunta o deseas programar una clase, no dudes en ponerte en contacto conmigo a través del siguiente formulario:</p>
             <form action="mailto:sgcov@hotmail.com" method="post" enctype="text/plain">
@@ -56,5 +49,6 @@
             </form>
         </section>
     </main>
+<footer><img src="./static/logo_translucido.png" alt="Logo de tu organización o empresa" width="150"></footer>
 </body>
-</html>
+</html></html>
