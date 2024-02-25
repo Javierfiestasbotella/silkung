@@ -64,16 +64,81 @@
 	</header><!-- /header -->
 
 	<div class="container">
-        <div class="column">
-            <img src="static/msj.jpg" alt="Imagen 1">
-        </div>
-        <div class="column">
-            <img src="static/q-fondo01.jpg" alt="Imagen 2">
-        </div>
-        <div class="column">
-            <img src="static/pil13.jpg" alt="Imagen 3">
-        </div>
+    <div class="column">
+        <img src="static/fondoqgong.jpg" alt="Imagen 1">
     </div>
+    <div class="column">
+        <img src="static/fondopilates.jpg" alt="Imagen 2">
+    </div>
+    <div class="column">
+        <img src="static/msj.jpg" alt="Imagen 3">
+    </div>
+</div>
+
+
+ <style>
+    .column img {
+        transition: opacity 1s ease; /* Agrega una transición suave a la propiedad de opacidad */
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.column img'); // Selecciona todas las imágenes
+
+        function randomizeImage() {
+            const index = Math.floor(Math.random() * images.length); // Elige un índice aleatorio
+            const currentImage = images[index];
+            const src = currentImage.src; // Obtiene la URL de la imagen actual
+
+            // Extrae la parte del nombre de archivo sin la extensión
+            const fileName = src.split('/').pop().split('.')[0];
+            const extension = src.split('.').pop(); // Obtiene la extensión del archivo
+
+            // Construye la nueva URL con el nombre de archivo terminado en '-bn' y la misma extensión
+            const newSrc = src.includes('bn') // Si la imagen actual ya es una imagen en blanco y negro
+                ? src.replace('bn', '') // Restaura la original eliminando 'bn'
+                : src.replace(fileName + '.' + extension, fileName + 'bn.' + extension); // De lo contrario, agrega 'bn' al nombre del archivo
+
+            // Carga la nueva imagen en una nueva instancia de Image para verificar si la imagen es válida
+            const tempImage = new Image();
+            tempImage.onload = function() {
+                // Si la imagen cargó correctamente, cambia la opacidad de la imagen actual a 0
+                currentImage.style.opacity = 0;
+
+                // Espera un breve momento antes de cambiar la fuente de la imagen
+                setTimeout(function() {
+                    currentImage.src = newSrc; // Cambia la fuente de la imagen actual por la nueva URL
+                    currentImage.style.opacity = 1; // Aumenta la opacidad de la imagen de nuevo a 1
+                }, 500); // Tiempo de espera antes de cambiar la imagen (medio segundo)
+
+                // Restaura las otras imágenes a su estado original
+                images.forEach(image => {
+                    if (image !== currentImage) {
+                        const originalSrc = image.src.includes('bn') // Si la imagen ya es una imagen en blanco y negro
+                            ? image.src.replace('bn', '') // Restaura la original eliminando 'bn'
+                            : image.src;
+                        image.src = originalSrc;
+                    }
+                });
+            };
+            tempImage.onerror = function() {
+                // Si hay un error al cargar la imagen, no cambia nada
+                console.error("Error al cargar la imagen:", newSrc);
+            };
+            tempImage.src = newSrc; // Carga la nueva imagen en la instancia de Image
+        }
+
+        setInterval(randomizeImage, 7000); // Cambia de imagen aleatoriamente cada 5 segundos
+    });
+</script>
+
+
+
+
+
+
+
 
 
 <div id="cookie-banner">
@@ -193,5 +258,21 @@
          </div></div>
 </div>
 </footer>
+
+<script>
+    // Función para activar/desactivar el menú desplegable
+    function toggleSubMenu(event) {
+        event.preventDefault();
+        var subMenu = event.target.nextElementSibling;
+        subMenu.classList.toggle('active');
+    }
+
+    // Event listeners para los elementos con clase "sub-menu"
+    var subMenus = document.querySelectorAll('.sub-menu');
+    subMenus.forEach(function(subMenu) {
+        subMenu.querySelector('a').addEventListener('click', toggleSubMenu);
+    });
+</script>
+
 </body>
 </html>

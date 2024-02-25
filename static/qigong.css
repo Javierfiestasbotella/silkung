@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #FFE6B3; /* Cambiado de #333 a #FFE6B3 */
+    background-color: #F3E0DC; /* Cambiado de #333 a #FFE6B3 */
     color: black; /* Cambiado de #fff a black */
     padding: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@ main {
 section {
     margin-bottom: 20px; /* Cambiado de 40px a 20px */
     opacity: 0.8; /* Este estilo no está en el segundo bloque */
-    background-color: #FFDCB2;
+    background-color: #F3E0DC;
     border-radius: 15px;
     padding-left: 10px;
     padding-bottom: 10px;
